@@ -28,10 +28,10 @@
 
 ### Data ###
 *.db
-*.csv
+#*.csv
 *.tsv
 *.json
-*.geojson
+#*.geojson
 *.dat
 *.efx
 *.gbr

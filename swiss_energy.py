@@ -21,7 +21,7 @@ st.write("data source:", url)
 def load_data(path):
      df = pd.read_csv(path)
      return df
-df_ch = load_data(path = "data/raw/renewable_power_plants_CH.csv")
+df_ch = load_data(path = ".data/raw/renewable_power_plants_CH.csv")
 df_ch = deepcopy(df_ch) #for security
 
 if st.checkbox("Show DataFrame"):
@@ -53,7 +53,7 @@ st.plotly_chart(p_fig)
 import json
 
 # Load GeoJSON file
-with open("data/raw/georef-switzerland-kanton.geojson") as f:
+with open(".data/raw/georef-switzerland-kanton.geojson") as f:
     cantons = json.load(f)
 
 cantons_dict = {'TG':'Thurgau', 'GR':'Graubünden', 'LU':'Luzern', 'BE':'Bern', 'VS':'Valais', 
