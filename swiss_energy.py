@@ -84,7 +84,7 @@ m_fig2 = px.choropleth_map(df_ch_capacity, geojson=cantons, locations='canton_na
                            map_style="carto-positron",
                            zoom=7, center = {"lat": 46.8182, "lon": 8.2275},
                            opacity=0.5,
-                           labels={'production':'Renewable Energy Electrical Capacity', 'canton_name': "Canton"}
+                           labels={'electrical_capacity':'Renewable Energy Electrical Capacity', 'canton_name': "Canton"}
                           )
 m_fig2.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
